@@ -144,38 +144,43 @@ h2{
 
 /*section-one*/
 
-#section-one h2{
+#section-one h2 {
     color: black;
     text-align: left;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 28px;
 }
-#section-one p{
-    color:grey;
+
+#section-one p {
+    color: grey;
     margin: 5px 0;
+    margin-left: 45px;
 }
 
 .paragraf-logo {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-right: 20px;
     margin-bottom: 25px;
 }
 
 .paragraf-logo ul {
     display: flex;
-    gap: 100px;
+    gap: 20px;
 }
+
 .paragraf-logo ion-icon {
     font-size: 35px;
-    color:gray
+    color: gray;
 }
 
 
 /*section-two*/
+
 .first-item{
     margin-left: 50px;
     margin-top:50px;
@@ -216,4 +221,305 @@ h2{
 }
 .third-item{  
     width: 200px;
+}
+
+/*footer*/
+
+#footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer ul {
+    display: flex;
+    padding: 20px 0 0 0;
+    margin: 0;
+    color: white;
+    justify-content: center;
+}
+
+ion-icon {
+    margin: 0 20px;
+}
+
+#footer p {
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/*Section-nine*/
+
+
+#section-nine {
+    background-image: url('slike/paralax.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding: 20px; 
+    height: 200px;
+}
+
+#section-nine hr {
+    width: 50px;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+#section-nine h1 h5{
+    color: white; 
+}
+#section-nine h5{
+    color: white;
+    margin: 10px 0; 
+}
+
+#button-nine-section {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: solid white;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*Section-four*/
+
+#section-four {
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.right {
+    text-align: center; 
+    padding-left: 150px;
+}
+.left{
+    padding-left: 40px;
+}
+.left h2, .left hr, .left p {
+    margin-left: 20px; 
+    margin-right: 20px;
+
+}
+.left h2{
+    color: black;
+}
+.left p{
+    color: grey;
+    font-size: 12px;
+}
+
+.left hr {
+    width: 50px;
+    border-top: 2px solid orange;   
+    margin: 20px 0;
+    margin-left: 21px;
+}
+
+img {
+    max-width: 100%; 
+    height: 250px;
+    width: 400px;
+
+
+}
+/*Section-five*/
+
+#section-five{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#glavni-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 40px;
+        padding-bottom: 60px;
+        max-width: 1150px;
+}
+
+.thoughtful-design, .well-crafted, .easy-to-customize{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#section-five h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+#section-five p{
+    color: rgb(156, 152, 152);
+    text-align: center;
+    font-size: 14px;
+}
+
+#section-five hr{
+    width: 50px;
+    border-top: 2px solid orange;   
+}
+
+.ikonice{
+    border: solid 2px orange;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px ;
+}
+
+/*Section-three*/
+
+#section-three {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#section-three hr{
+    width: 50px;
+    border-top: 2px solid orange;   
+    margin: 20px 0;
+}
+
+.levi-deo img {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 30px;
+}
+
+.desni-deo {
+    width: 50%;
+    padding-left: 350px;
+    margin-left: 50px;
+}
+
+.desni-deo h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.desni-deo hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.desni-deo p {
+    color: #666;
+    font-size: 12px;
+}
+
+.desni-deo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.desni-deo li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.desni-deo li ion-icon {
+    font-size: 35px;
+    color: orange;
+    margin-right: 15px;
+}
+
+.desni-deo li h4 {
+    margin: 0;
+    color: #333;
+}
+
+.desni-deo li p {
+    margin: 0;
+    color: #666;
+}
+
+/*Section-seven*/
+
+#section-seven h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+#section-seven p{
+    color: rgb(156, 152, 152);
+    text-align: center;
+    font-size: 15px;
+}
+#section-seven .divovi .par{
+    text-align: left;
+}
+.par {
+    border: none;
+    border-radius: 3%;
+    background-color: rgb(244, 240, 240);
+}
+
+#section-seven hr{
+    width: 50px;
+    border-top: 2px solid orange;   
+}
+.slika1 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+
+}
+#main-section-seven{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divovi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 20px;
+    padding: 10px 40px 10px 40px;
+}
+.slika1{
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+    padding-left: 20px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+.info{
+    padding-left: 30px;
 }
