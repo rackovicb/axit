@@ -1,4 +1,5 @@
 /*Header*/
+
 body, h1, ul {
     margin: 0;
     padding: 0;
@@ -326,7 +327,7 @@ h2{
 /*Section-four*/
 
 #section-four {
-    background-color: rgb(233, 230, 230);
+    background-color: rgb(247, 246, 246);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -426,6 +427,149 @@ img {
 
 /*Section-six*/
 
+#section-six {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(247, 246, 246);
+}
+
+#section-six h1 {
+    font-size: 2rem;
+    color: black;
+}
+
+#section-six-hr {
+    width: 50px;
+    border-top: 2px solid orange;
+    margin: 20px auto;
+}
+
+#section-six p {
+    color: grey;
+    margin-bottom: 20px;
+}
+#basic-hr-first{
+    width: 277px;
+    border: 2px solid white;
+}
+#enterprise-hr{
+    border: 2px solid white;
+    margin-top: 20px;
+    width: 277px;
+}
+#professional-hr{
+    border: 2px solid white;
+    margin-top: 20px;
+    width: 277px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: flex-end; 
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.card-two {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+.card-header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    border-bottom: 4px solid orange;
+    position: relative;
+}
+
+.card-header hr {
+    width: 60px;
+    border: 1px solid white;
+    margin: 10px auto;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: white;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: gray;
+}
+
+
+#first-dollar, #first-price {
+    color: white;
+    font-size: 2.5rem;
+}
+#second-dollar{
+    color: white;
+    font-size: 40px;
+}
+#second-price{
+    color: white;
+    font-size: 70px;
+}
+#third-dollar, #third-price, #third-price-zero {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#popular-text {
+    background-color: orange;
+    color: white;
+    position: absolute;
+    top: 286px;
+    left:0px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    width: 270px;
+}
+
+.card-header-second, .card-header-third {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    border-bottom: 4px solid orange;
+}
+
+#third-list li, #first-list li, #second-list li {
+    font-size: 15px;
+    padding-top: 5px;
+    color: gray;
+}
 
 /*Section-seven*/
 
