@@ -9,7 +9,7 @@ body, h1, ul {
     padding: 20px 0;
 }
 
-.ceo-heder {
+.all-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,14 +17,17 @@ body, h1, ul {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+.all-header h1{
+    padding-left: 30px;
+}
 #header h1 {
     color: white;
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: -6px;
+    margin-top: -5px;
 }
 
-#it-span {
+.it-span {
     color: orange;
 }
 
@@ -34,7 +37,7 @@ body, h1, ul {
 }
 
 #header nav ul li {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 #header nav ul li a {
@@ -66,7 +69,7 @@ body, h1, ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 97%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -111,35 +114,44 @@ h2{
     color: white;
 }
 
-.right-content {
+.right-content1 {
     background-color: white;
     padding: 20px;
     margin-left: 350px;
     max-width: 300px;
+    padding-left: -50px;
 }
 
-.right-content h3 {
+.right-content1 h3 {
     color: black;
     margin-bottom: 20px;
 }
-.right-content input {
+.right-content1 input {
     width: 100%;
-    padding: 1px;
-    margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-bottom: solid 1px grey;
     
+}
+#input-second-form{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px grey;
+}
+#input-second-form input {
+    width: 85%;
+    margin: 10px 12px 10px 12px;
+    padding: 8px 10px;
+    border-bottom: 1px solid grey;
 }
 
 .button-second{
     width: 100%;
+    height: 40px;
     border: none;
     color: white;
-    padding-top: 20px;
-    margin-right: 200px;
-    margin-top: 30px;
     background-color: orange;
     font-size: 20px;
+    margin-top: 30px;
 }
 
 /*section-one*/
@@ -148,151 +160,168 @@ h2{
     color: black;
     text-align: left;
     margin-left: 65px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
     font-size: 28px;
 }
 
 #section-one p {
     color: grey;
     margin: 5px 0;
-    margin-left: 45px;
+    margin-left: 30px;
 }
 
 .paragraf-logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
-    margin-right: 20px;
-    margin-bottom: 25px;
+    padding-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
 }
 
 .paragraf-logo ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-left: 60px;
+    padding-left: 60px;
 }
 
 .paragraf-logo ion-icon {
-    font-size: 35px;
+    font-size: 60px;
     color: gray;
 }
 
-
 /*section-two*/
 
-.first-item{
-    margin-left: 50px;
-    margin-top:50px;
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 246, 246);
 }
-.box{
+
+.first-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
     background-color: black;
     color: white;
     height: 100px;
     width: 100px;
     display: flex;
-    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    transition: background-color 0.3s; 
 }
-.second-item p{
-    color: grey
+.first-item, .box{
+    margin-top:1px;
 }
-.second-item h3{
+.box:hover {
+    background-color: orange; 
+}
+
+.second-item h3 {
     font-size: 22px;
 }
-.second-item p{
-    color: grey
+
+.second-item p {
+    color: grey;
 }
-#download-button{
+
+#download-button {
     background-color: orange;
     color: white;
     border: none;
     height: 40px;
     width: 90px;
 }
-#glavni {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+.third-item {
+    width: 300px;
 }
 
-.first-item, .second-item, .third-item {
-    flex: 1; 
+/*Section-three*/
+
+#section-three {
+    display: flex;
+    padding: 20px;
+}
+#section-three hr{
+    width: 50px;
+    border-top: 2px solid orange;   
+    margin: 20px 0;
+}
+#main-div-section-three{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-.third-item{  
-    width: 200px;
+.left-part img {
+    width: 450px;
+    height: 260px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
-/*footer*/
-
-#footer {
-    background-color: black;
-    display: flex;
+.right-part {
+    direction: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    padding-left: 350px;
+    margin-left: 50px;
 }
 
-#footer ul {
-    display: flex;
-    padding: 20px 0 0 0;
-    margin: 0;
-    color: white;
-    justify-content: center;
+.right-part h3 {
+    margin-top: 0;
+    color: #333;
 }
 
-ion-icon {
-    margin: 0 20px;
+.right-part hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
 }
 
-#footer p {
-    color: white;
-    margin-top: 10px;
+.right-part p {
+    color: #666;
     font-size: 12px;
 }
 
+.right-part ul {
+    list-style: none;
+    padding-right: 40px;
+    
+}
 
-/*Section-nine*/
-
-
-#section-nine {
-    background-image: url('slike/paralax.jpg');
-    background-size: cover;
-    background-position: center;
+.right-part li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    padding: 20px; 
-    height: 200px;
-}
-
-#section-nine hr {
-    width: 50px;
-    border-top: 1px solid white;
-    margin: 20px 0;
-}
-
-#section-nine h1 h5{
-    color: white; 
-}
-#section-nine h5{
-    color: white;
-    margin: 10px 0; 
-}
-
-#button-nine-section {
-    padding: 10px 20px;
     margin-top: 20px;
-    border: solid white;
-    background-color:transparent;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+    margin-left: -25px;
+}
+.right-part li ion-icon {
+    font-size: 35px;
+    color: orange;
+    margin-right: 15px;
 }
 
+.right-part li h4 {
+    margin: 0;
+    color: #333;
+}
+
+.right-part li p {
+    margin: 0;
+    color: #666;
+}
 
 /*Section-four*/
 
@@ -340,9 +369,8 @@ img {
     max-width: 100%; 
     height: 250px;
     width: 400px;
-
-
 }
+
 /*Section-five*/
 
 #section-five{
@@ -352,7 +380,7 @@ img {
     text-align: center;
 }
 
-#glavni-div {
+#main-div-section-five {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -389,81 +417,15 @@ img {
     border-top: 2px solid orange;   
 }
 
-.ikonice{
+.icons{
     border: solid 2px orange;
     border-radius: 100%;
     height: 40px;
     width: 40px ;
 }
 
-/*Section-three*/
+/*Section-six*/
 
-#section-three {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-#section-three hr{
-    width: 50px;
-    border-top: 2px solid orange;   
-    margin: 20px 0;
-}
-
-.levi-deo img {
-    width: 100%;
-    max-width: 500px;
-    padding-left: 30px;
-}
-
-.desni-deo {
-    width: 50%;
-    padding-left: 350px;
-    margin-left: 50px;
-}
-
-.desni-deo h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-.desni-deo hr {
-    border: none;
-    height: 1px;
-    background-color: #ccc;
-    margin: 10px 0;
-}
-
-.desni-deo p {
-    color: #666;
-    font-size: 12px;
-}
-
-.desni-deo ul {
-    list-style: none;
-    padding: 0;
-}
-
-.desni-deo li {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.desni-deo li ion-icon {
-    font-size: 35px;
-    color: orange;
-    margin-right: 15px;
-}
-
-.desni-deo li h4 {
-    margin: 0;
-    color: #333;
-}
-
-.desni-deo li p {
-    margin: 0;
-    color: #666;
-}
 
 /*Section-seven*/
 
@@ -479,10 +441,10 @@ img {
     text-align: center;
     font-size: 15px;
 }
-#section-seven .divovi .par{
+#section-seven .divs .paragraf{
     text-align: left;
 }
-.par {
+.paragraf {
     border: none;
     border-radius: 3%;
     background-color: rgb(244, 240, 240);
@@ -492,7 +454,7 @@ img {
     width: 50px;
     border-top: 2px solid orange;   
 }
-.slika1 img{
+.picture1 img{
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -505,14 +467,14 @@ img {
     align-items: center;
 }
 
-.divovi {
+.divs {
     display: flex;
     flex-direction: column;
     align-items: center;  
     margin: 20px;
     padding: 10px 40px 10px 40px;
 }
-.slika1{
+.picture1{
     display: flex;
     align-items: center;
     padding-right: 80px;
@@ -522,4 +484,132 @@ img {
 }
 .info{
     padding-left: 30px;
+}
+
+/*Section-eight*/
+
+#section-eight {
+    background-image: url('slike/paralax.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding: 20px; 
+    height: 200px;
+}
+
+#section-eight hr {
+    width: 50px;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+#section-eight h1 h5{
+    color: white; 
+}
+#section-eight h5{
+    color: white;
+    margin: 10px 0; 
+}
+
+#button-eight-section {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: solid white;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Secion-nine*/
+
+#section-nine {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#section-nine h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+#section-nine hr {
+    width: 50px;
+    border: 1px solid orange;
+    margin: 20px auto;
+}
+
+#section-nine p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 200px;
+}
+
+.contact-us form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+input[type="password"],
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #d1cccc;
+}
+
+textarea {
+    height: 169px;
+}
+
+#section-nine button{
+    background-color: orange;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 120px;
+ }
+
+/*footer*/
+
+#footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer ul {
+    display: flex;
+    padding: 20px 0 0 0;
+    margin: 0;
+    color: white;
+    justify-content: center;
+}
+
+ion-icon {
+    margin: 0 20px;
+}
+
+#footer p {
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
 }
