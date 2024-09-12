@@ -220,6 +220,7 @@ h2{
     justify-content: center; 
     align-items: center;
     transition: background-color 0.3s; 
+    cursor: pointer;
 }
 .first-item, .box{
     margin-top:1px;
@@ -247,12 +248,20 @@ h2{
 .third-item {
     width: 300px;
 }
+.content {
+    display: none; 
+}
+
+.content.active {
+    display: block;
+}
 
 /*Section-three*/
 
 #section-three {
     display: flex;
     padding: 20px;
+    justify-content: space-between;
 }
 #section-three hr{
     width: 50px;
@@ -276,7 +285,6 @@ h2{
     flex-direction: column;
     justify-content: center;
     padding-left: 350px;
-    margin-left: 50px;
 }
 
 .right-part h3 {
@@ -598,7 +606,7 @@ ul li {
     width: 50px;
     border-top: 2px solid orange;   
 }
-.picture1 img{
+.users img{
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -618,7 +626,7 @@ ul li {
     margin: 20px;
     padding: 10px 40px 10px 40px;
 }
-.picture1{
+.users{
     display: flex;
     align-items: center;
     padding-right: 80px;
