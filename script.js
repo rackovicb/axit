@@ -1,24 +1,18 @@
-document.getElementById('content1').style.display = 'block';
-document.getElementById('content2').style.display = 'block';
-document.getElementById('content3').style.display = 'block';
+document.getElementById('content1').classList.add('active');
 
-document.getElementById('tab1').onclick = function() {
-    hideAllContents();
-    document.getElementById('content1').style.display = 'block';
-}
+let tabs = document.querySelectorAll('.tab');
 
-document.getElementById('tab2').onclick = function() {
-    hideAllContents();
-    document.getElementById('content2').style.display = 'block';
-}
-
-document.getElementById('tab3').onclick = function() {
-    hideAllContents();
-    document.getElementById('content3').style.display = 'block';
-}
+tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+        hideAllContents();
+        let target = this.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
+    });
+});
 
 function hideAllContents() {
-    document.getElementById('content1').style.display = 'none';
-    document.getElementById('content2').style.display = 'none';
-    document.getElementById('content3').style.display = 'none';
+    let contents = document.querySelectorAll('.content');
+    contents.forEach(function(content) {
+        content.classList.remove('active');
+    });
 }

@@ -11,7 +11,6 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
     <header id="header">
         <div class="all-header">
             <h1>AX<span class="it-span">IT</span></h1>
@@ -76,40 +75,39 @@
     </section>
         <hr>
 
-    <section id="section-two">
-        <div id="main">
-            <div class="first-item">
-                <div class="box" id="tab1">TAB1</div>
-                <div class="box" id="tab2">TAB2</div>
-                <div class="box" id="tab3">TAB3</div>
-            </div>
-            <div class="second-item">
-                <div class="content" id="content1">
-                    <!-- <h3>Content for Tab 1</h3> -->
-                    <h3>Tabs with soft transition effect.</h3>
-                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Aenean euismod <br>
-                       bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
-                       justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque <br>
-                       penatibus et magnis dis parturient montes.</p>
-                 <br>
+        <section id="section-two">
+            <div id="main">
+                <div class="first-item">
+                    <div class="box tab" data-target="content1">TAB1</div>
+                    <div class="box tab" data-target="content2">TAB2</div>
+                    <div class="box tab" data-target="content3">TAB3</div>
                 </div>
-                <div class="content" id="content2" style="display: none;">
-                    <!-- <h3>Content for Tab 2</h3> -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
-                        bibenndum laoreet.</p>
-                    <br>
+                <div class="second-item">
+                    <div class="content" id="content1">
+                        <!-- Sadržaj za Tab 1 -->
+                        <h3>Tabs with soft transition effect.</h3>
+                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Aenean euismod <br>
+                           bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
+                           justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque <br>
+                           penatibus et magnis dis parturient montes.</p>
+                        <br>
+                    </div>
+                    <div class="content" id="content2">
+                        <!-- Sadržaj za Tab 2 -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
+                            bibendum laoreet.</p>
+                        <br>
+                    </div>
+                    <div class="content" id="content3">
+                        <!-- Sadržaj za Tab 3 -->
+                        <button id="download-button">Download</button>
+                    </div>
                 </div>
-                <div class="content" id="content3" style="display: none;">
-                    <!-- <h3>Content for Tab 3 </h3> -->
-                    <button id="download-button">Download</button>
+                <div class="third-item">
+                    <img src="slike/feature.png" alt="feature picture">
                 </div>
             </div>
-            
-            <div class="third-item">
-                <img src="slike/feature.png" alt="feature picture">
-            </div>
-        </div>
-    </section>
+        </section>
 
     <section id="section-three">
         
@@ -372,6 +370,5 @@
             </ul>
             <p>2015 Axure Themes</p>
         </footer>
-
 </body>
 </html>

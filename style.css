@@ -4,7 +4,14 @@ body, h1, ul {
     margin: 0;
     padding: 0;
 }
-
+/*
+.container{
+    height: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    
+}
+*/
 #header {
     background-color: black;
     padding: 20px 0;
@@ -249,11 +256,15 @@ h2{
     width: 300px;
 }
 .content {
-    display: none; 
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
 }
 
 .content.active {
     display: block;
+    visibility: visible;
+    position: relative;
 }
 
 /*Section-three*/
